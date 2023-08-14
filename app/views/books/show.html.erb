@@ -1,9 +1,13 @@
-<h2>Title:</h2>
-<p><%= @book.title %></p>
-
-<h2>Body:</h2>
-<p><%= @book.body %></p>
-
+<div class="font">
+ <div class="con">  
+  <div><%= flash[:notice] %></div>
+   <p><storong>Title:</storong><%= @book.title %></p>
+ </div>
+<div class="tant">
+ <p><storong>Body:</storong><%= @book.body %></p>
+</div>
 
 <%= link_to 'Edit', edit_book_path(@book.id) %>
-<%= link_to 'Back', books_path(@book.id) %>
+<%= link_to 'Back', '/books' %>
+
+</div>
